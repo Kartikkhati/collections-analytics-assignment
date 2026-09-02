@@ -1,0 +1,7 @@
+metric,raw_value,golden_value,delta
+raw_borrower_rows,30600.0,11015.0,-19585.0
+raw_account_rows,30000.0,30000.0,0.0
+raw_agent_rows,30000.0,1000.0,-29000.0
+raw_call_rows,91350.0,90079.0,-1271.0
+raw_payment_rows,25500.0,25000.0,-500.0
+successful_payment_amount,1341485926.33,1315583964.6399999,-25901961.690000057

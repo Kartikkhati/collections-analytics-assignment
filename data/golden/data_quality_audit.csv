@@ -1,0 +1,6 @@
+dataset,raw_rows,golden_rows,rows_removed,exact_duplicate_rows_removed,conflicting_identifier_rows_flagged,null_key_rows,notes,reduction_pct
+borrowers,30600,11015,19585,600,8518,0,One representative profile retained per borrower_id. Profile conflicts are flagged instead of silently reconciled.,64.00326797385621
+accounts,30000,30000,0,0,0,0,"account_id retained as the account grain. Missing borrower IDs are flagged, not imputed.",0.0
+agents,30000,1000,29000,0,1000,0,Latest profile retained per agent_id. employee_code is not used as a unique key.,96.66666666666667
+calls,91350,90079,1271,1271,79,0,Exact duplicate events removed. Reused/conflicting call IDs remain visible. Missing agent IDs are retained.,1.391351943076081
+payments,25500,25000,500,486,14,0,Exact duplicates removed first. Repeated payment IDs are resolved using record completeness. payment_reference is not used as the deduplication key.,1.9607843137254901
